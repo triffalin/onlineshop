@@ -82,3 +82,24 @@ a {
 	background-color: var(--color-primary-700);
 	border-color: var(--color-primary-700);
 }
+
+.alert {
+	border-radius: var(--border-radius-medium);
+	-webkit-border-radius: var(--border-radius-medium);
+	-moz-border-radius: var(--border-radius-medium);
+	-ms-border-radius: var(--border-radius-medium);
+	-o-border-radius: var(--border-radius-medium);
+	background-color: var(--color-error-100);
+	color: var(--color-error-500);
+	padding: var(--space-4);
+}
+
+.alert h2 {
+	font-size: 1rem;
+	margin: var(--space-2) 0;
+	text-transform: uppercase;
+}
+
+.alert p {
+	margin: var(--space-2) 0;
+}
