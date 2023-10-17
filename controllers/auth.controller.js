@@ -47,7 +47,7 @@ async function signup(req, res, next) {
 			req,
 			{
 				errorMessage:
-					'Please check your input. Password mut be at least 6 characters long, postal code must be 5 characters long',
+					'Please check your input. Password must be at least 6 character slong, postal code must be 5 characters long.',
 				...enteredData,
 			},
 			function () {
@@ -73,7 +73,7 @@ async function signup(req, res, next) {
 			sessionFlash.flashDataToSession(
 				req,
 				{
-					errorMessage: 'User exists already! Try logging in instead',
+					errorMessage: 'User exists already! Try logging in instead!',
 					...enteredData,
 				},
 				function () {
