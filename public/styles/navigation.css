@@ -46,10 +46,6 @@ main {
 	border-radius: var(--border-radius-small);
 	background-color: transparent;
 	padding: var(--space-2) var(--space-4);
-	-webkit-border-radius: var(--border-radius-small);
-	-moz-border-radius: var(--border-radius-small);
-	-ms-border-radius: var(--border-radius-small);
-	-o-border-radius: var(--border-radius-small);
 }
 
 #mobile-menu-btn {
@@ -77,9 +73,13 @@ main {
 	height: calc(100vh - 5rem);
 	width: 100%;
 	background-color: var(--color-gray-700);
-	display: flex;
+	display: none;
 	flex-direction: column;
 	align-items: center;
+}
+
+#mobile-menu.open {
+	display: flex;
 }
 
 #mobile-menu nav {
@@ -96,7 +96,7 @@ main {
 
 @media (min-width: 48rem) {
 	main {
-		margin-top: 6rem;
+		margin-top: 0;
 	}
 
 	#main-header {
@@ -127,10 +127,6 @@ main {
 	.nav-items a {
 		padding: var(--space-2) var(--space-4);
 		border-radius: var(--border-radius-small);
-		-webkit-border-radius: var(--border-radius-small);
-		-moz-border-radius: var(--border-radius-small);
-		-ms-border-radius: var(--border-radius-small);
-		-o-border-radius: var(--border-radius-small);
 	}
 
 	.nav-items a:hover,
