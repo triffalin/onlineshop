@@ -14,10 +14,23 @@ textarea {
 	font: inherit;
 	padding: var(--space-2);
 	border-radius: var(--border-radius-small);
-	-webkit-border-radius: var(--border-radius-small);
-	-moz-border-radius: var(--border-radius-small);
-	-ms-border-radius: var(--border-radius-small);
-	-o-border-radius: var(--border-radius-small);
 	border: none;
 	width: 90%;
+}
+
+#image-upload-control {
+	display: flex;
+	align-items: center;
+}
+
+#image-upload-control input {
+	max-width: 15rem;
+}
+
+#image-upload-control img {
+	display: none;
+	width: 4rem;
+	height: 4rem;
+	object-fit: cover;
+	border-radius: var(--border-radius-small);
 }
